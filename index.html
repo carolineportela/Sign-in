@@ -28,6 +28,13 @@
 
 
     <style>
+      .checkbox{
+        margin-top: 4%;
+      }
+      .cadastro{
+        margin-top: 4%;
+      }
+    
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -35,12 +42,41 @@
         -moz-user-select: none;
         user-select: none;
       }
-
+      main{
+        display: flex;
+      }
+      .carousel-inner{
+        margin-left: 20%;
+      }
+      .carousel-indicators{
+        margin-left: 20%;
+      }
+      .carousel slide{
+        margin-left: 20%;
+      }
+      .carouselExampleIndicators{
+        margin-left: 40%;
+      }
+     
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
+       
       }
+      @media (max-width: 640px) {
+        .tudoaqui{
+          display: none;
+        }
+      }
+      @media (max-width: 661px) {
+        .tudoaqui{
+          display: none;
+        }
+        
+
+}
+
 
       .b-example-divider {
         height: 3rem;
@@ -78,6 +114,8 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+     
+     
     </style>
 
 
@@ -88,13 +126,30 @@
   </head>
 
 <body class="text-center">
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+     <div class="tudoaqui">
 
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/Designer _Two Color.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Online payment_Outline.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Designer _Isometric.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+     </div>
+   
   <main class="form-signin w-100 m-auto">
     <form>
-      <img class="mb-4" src="./img/sign-in (1).png" alt="" width="72" height="57">
+     
       <h1 class="h3 mb-3 fw-normal">Log in</h1>
       
       <div class="form-floating">
@@ -111,14 +166,20 @@
       <div class="checkbox mb-3">
         
         <label>
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
+          <input type="checkbox" value="remember-me"> Remember
+        </label> 
+      </div>
+     
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+      
+      <div class="cadastro">
+        <button type="button" class="btn btn-outline-warning">Register</button>
+
       </div>
       
-      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
      
-      <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
     </form>
+   
   </main>
   <!-- Verificar todas as tags abaixo do main -->
   <div id="goog-gt-tt" class="skiptranslate" dir="ltr">
